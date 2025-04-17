@@ -14,7 +14,10 @@
   {%- endcapture -%}
 
   <!-- Setup Open Graph image -->
-
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
+  
   {% if page.image %}
     {% assign src = page.image.path | default: page.image %}
 
