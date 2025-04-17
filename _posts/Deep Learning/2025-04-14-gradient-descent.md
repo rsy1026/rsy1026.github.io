@@ -76,7 +76,7 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
 $$\vert{\overrightarrow{a}}\vert=\sqrt{(a_1)^2+(a_2)^2}$$
 위에서는 2차원 좌표계였고, 만약 3차원 좌표계가 있을 때의 임의의 벡터 $\overrightarrow{v}$는 다음과 같이 $x,y,z$축 각각에 대한 성분과 단위 벡터 $\hat{i},\hat{j},\hat{k}$를 이용해 표현할 수 있다:
 $$\overrightarrow{v}=\begin{bmatrix}a\\b\\c\end{bmatrix}=a\begin{bmatrix}1\\0\\0\end{bmatrix}+b\begin{bmatrix}0\\1\\0\end{bmatrix}+c\begin{bmatrix}0\\0\\1\end{bmatrix}=a\hat{i}+b\hat{j}+c\hat{k}$$     
-$\hat{i}=\begin{bmatrix}1\\0\\0\end{bmatrix},\hat{j}=\begin{bmatrix}0\\1\\0\end{bmatrix},\hat{k}=\begin{bmatrix}0\\0\\1\end{bmatrix}$$
+$$\hat{i}=\begin{bmatrix}1\\0\\0\end{bmatrix},\hat{j}=\begin{bmatrix}0\\1\\0\end{bmatrix},\hat{k}=\begin{bmatrix}0\\0\\1\end{bmatrix}$$
 이 때 3차원 벡터 $\overrightarrow{v}$의 크기는 마찬가지로 [피타고라스 정의](https://kukuta.tistory.com/152)를 사용하여 나타낼 수 있다:
 $$\vert{\overrightarrow{v}}\vert=\sqrt{a^2+b^2+c^2}$$
 
