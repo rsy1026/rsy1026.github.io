@@ -6,6 +6,7 @@ tags:
     - Deep Learning
     - Gradient Descent
     - Directional Derivative
+use_math: true
 ---
 
 
