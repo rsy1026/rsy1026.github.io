@@ -20,7 +20,7 @@ tags:
 [Directional derivatives와 gradient descent method](https://m.blog.naver.com/enewltlr/220912511268)
 </ul>
 <ul>
-    <li>그래디언트 및 방향도함수
+    <li>그래디언트 및 방향도함수</li>
 
 [Calculus III - Directional Derivatives](https://tutorial.math.lamar.edu/classes/calciii/directionalderiv.aspx)\
 [편미분∂ 전미분d 변화량Δ 그래디언트∇](https://velog.io/@seokjin1013/%ED%8E%B8%EB%AF%B8%EB%B6%84%EA%B3%BC-%EC%A0%84%EB%AF%B8%EB%B6%84)\
@@ -30,7 +30,7 @@ tags:
 
 </ul>
 <ul>
-    <li>수학 개념들
+    <li>수학 개념들</li>
 
 [Khan Academy - 평균변화율 복습](https://ko.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:average-rate-of-change-word-problems/a/average-rate-of-change-review)\
 [[기본개념] 도함수의 정의](https://bhsmath.tistory.com/172)\
