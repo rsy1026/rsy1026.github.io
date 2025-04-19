@@ -67,10 +67,10 @@ use_math: true
 
 ## 벡터의 성분과 단위 벡터
 <span style="color:orange">벡터</span>는 직교좌표계 상의 각 축에 대한 성분의 합으로 나타낼 수 있다. 만약 원점이 $O$인 2차원 평면좌표가 있을 때, $A(a_1,a_2)$를 종점으로 하는 임의의 벡터 $\overrightarrow{a}$에 대해 다음과 같이 표현할 수 있다:
-![image info](/assets/img/vector.png)
+![image info](/assets/img/vector.png){: width="70%"}
 *이 [링크](https://jwmath.tistory.com/490)의 이미지를 재구성했습니다.*
-\\[\overrightarrow{a}=\overrightarrow{OA}=\overrightarrow{OA_1}+\overrightarrow{OA_2}=a_1\overrightarrow{e_1}+a_2\overrightarrow{e_2}=a_1\begin{bmatrix}1\\0\end{bmatrix}+a_2\begin{bmatrix}0\\1\end{bmatrix}=[a_1,a_2]\\]
-\\[\overrightarrow{e_1}=\begin{bmatrix}1\\0\end{bmatrix},\overrightarrow{e_2}=\begin{bmatrix}0\\1\end{bmatrix}\\]
+\\[\overrightarrow{a}=\overrightarrow{OA}=\overrightarrow{OA_1}+\overrightarrow{OA_2}=a_1\overrightarrow{e_1}+a_2\overrightarrow{e_2}=a_1\begin{bmatrix}1 \\ 0\end{bmatrix}+a_2\begin{bmatrix}0 \\ 1\end{bmatrix}=[a_1,a_2]\\]
+\\[\overrightarrow{e_1}=\begin{bmatrix}1 \\ 0\end{bmatrix},\overrightarrow{e_2}=\begin{bmatrix}0 \\ 1\end{bmatrix}\\]
 이 때 실수 $a_1, a_2$는 각각 $x$축과 $y$축의 <span style="color:orange">성분</span>이고, $\overrightarrow{e_1},\overrightarrow{e_2}$는 각각 $x$축과 $y$축의 방향을 가지고 두 점 $E_1(0,1)$와 $E_2(1,0)$을 종점으로 하는 크기가 1인 벡터, <span style="color:orange">단위 벡터</span>이다. 즉, 각 축에 대한 단위 벡터의 방향과 각각 $a_1, a_2$의 크기를 가지는 두 벡터 $\overrightarrow{OA_1}, \overrightarrow{OA_2}$의 합이라고 할 수 있다.
 $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기는 다음과 같이 피타고라스의 정의에 의해 나타낼 수 있다:
 \\[\vert{\overrightarrow{a}}\vert=\sqrt{(a_1)^2+(a_2)^2}\\]
@@ -187,7 +187,7 @@ $g(z)$는 입력값을 $\vec{u}$ 방향으로 이동시키는 함수이므로, $
 이에 경사하강법에서는 gradient가 이미 <span style="color:orange">함수값이 가장 빠르게 변화하는 방향</span>을 나타내므로 목적함수의 그래디언트가 0이 되는 지점(critical point)을 효율적으로 찾아나갈 수 있다. 이 지점은 목적함수 내 여러 개의 local minimum나 saddle point일 수 있고 또는 global minimum일 수 있다. 경사하강법은 즉 주어진 조건에서 **local minimum**을 찾는 방법이며, *global minimum에 도달할지는 문제 특성에 따라 달라진다*. 또한 경사하강법은 같은 과정을 순환적으로(iteratively) 되풀이하며 목적 지점을 점진적으로 찾기 때문에 연산 과정을 최적화하는 데 효과적일 수 있다.   
 
 만약 cost function이 독립변수가 하나인 2차 함수일 때, 다음 그림과 같은 형태로 경사하강법을 시행할 수 있다. 
-![image info](/assets/img/gradient_descent.png)
+![image info](/assets/img/gradient_descent.png){: width="60%"}
 *이 [링크](https://angeloyeo.github.io/2020/08/16/gradient_descent.html) 내 이미지를 재구성했습니다.*
 
 함수값의 기울기 혹은 그래디언트 $\frac{dy}{dx}$가 양수일 때는 그래디언트의 방향이 양의 방향($+$)이므로 입력값이 그 반대 방향인 음의 방향($-$)으로 이동해야 하고, 반대로 그래디언트가 음수일 때는 입력값이 그 반대 방향인 양의 방향($+$)으로 이동해야 한다. 이를 수식으로 정리하면, 일반적으로 경사하강법을 공부할 때 많이 볼 수 있는 다음과 같은 형태가 된다:
