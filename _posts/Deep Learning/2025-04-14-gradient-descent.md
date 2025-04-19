@@ -128,23 +128,23 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
     \begin{aligned}
         \overrightarrow{v}
         =\begin{bmatrix}
-            a \\\\
-            b \\\\
+            a \\\\\\\\
+            b \\\\\\\\
             c
             \end{bmatrix}
         =a\begin{bmatrix}
-            1 \\\\ 
-            0 \\\\ 
+            1 \\\\\\\\ 
+            0 \\\\\\\\ 
             0 
             \end{bmatrix}
         +b\begin{bmatrix}
-            0 \\\\
-            1 \\\\
+            0 \\\\\\\\
+            1 \\\\\\\\
             0
             \end{bmatrix}
         +c\begin{bmatrix}
-            0 \\\\ 
-            0 \\\\ 
+            0 \\\\\\\\ 
+            0 \\\\\\\\ 
             1
             \end{bmatrix}
         =a\hat{i}+b\hat{j}+c\hat{k}
@@ -154,20 +154,20 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
     \begin{aligned}
         \hat{i}
         =\begin{bmatrix}
-            1 \\\\
-            0 \\\\
+            1 \\\\\\\\
+            0 \\\\\\\\
             0
             \end{bmatrix},
         \hat{j}
         =\begin{bmatrix}
-            0 \\\\
-            1 \\\\
+            0 \\\\\\\\
+            1 \\\\\\\\
             0
             \end{bmatrix},
         \hat{k}
         =\begin{bmatrix}
-            0 \\\\ 
-            0 \\\\ 
+            0 \\\\\\\\ 
+            0 \\\\\\\\ 
             1
             \end{bmatrix}
     \end{aligned}
@@ -192,7 +192,7 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
     f_x(a_0)=\lim_{h\to0}\frac{f(a_0+h\hat{i})-f(a_0)}{h}
     \\]
 
-이 때, $\begin{aligned}\hat{i}=\begin{bmatrix}1\\\\0\end{bmatrix}\end{aligned}$는 $x$축에 대한 단위 벡터이다. \
+이 때, $\begin{aligned}\hat{i}=\begin{bmatrix}1\\\\\\\\0\end{bmatrix}\end{aligned}$는 $x$축에 대한 단위 벡터이다. \
 <span style="color:orange">전미분</span>이란, 다변량함수에서 **모든** 변수들이 움직였을 때에 대한 함수값의 ``변화율``을 의미한다. 모든 변수에 대한 변화율을 종합하여 나타낸 미소 변화량 표현을 **전도함수**(total differential)라고 부르며, $\partial$ 표시 대신 $d$ 표시로서 나타낸다. 만약 다변량함수 $f(x,y,z,...)$가 있을 때 해당 함수의 전도함수는 다음과 같다:
 
 \\[
@@ -346,7 +346,7 @@ $g(z)$는 입력값을 $\vec{u}$ 방향으로 이동시키는 함수이므로, $
 결과적으로, 방향도함수 $D_{\overrightarrow{u}}f$는, 다변량함수 $f$의 그래디언트(``변화율`` 벡터) $\nabla f$와 임의의 방향벡터 $\overrightarrow{u}$ 간의 내적으로 표현될 수 있다: 
 
 \\[
-    D_{\overrightarrow{u}}f(x,y)=D_{\overrightarrow{u}}f=\nabla f\cdot \overrightarrow{u}=\Vert\nabla f\Vert\Vert\overrightarrow{u}/Vertcos\theta=\Vert\nabla f/Vertcos\theta
+    D_{\overrightarrow{u}}f(x,y)=D_{\overrightarrow{u}}f=\nabla f\cdot \overrightarrow{u}=\Vert\nabla f\Vert\Vert\overrightarrow{u}\Vert cos\theta=\Vert\nabla f\Vert cos\theta
     \\]
 
 이 때 $\theta$는 <span style="color:orange">다변수 그래디언트 벡터와 방향벡터 사이의 사잇각</span>이다. $D_{\overrightarrow{u}}f$가 $\theta$는 <span style="color:cyan">최대값</span>이 되려면 $cos\theta=1$이 되어야 하므로 $\theta=0$ (두 벡터가 <span style="color:cyan">같은</span> 방향)이 되어야 하고, 반대로 $D_{\overrightarrow{u}}f$가 <span style="color:cyan">최소값</span>이 되려면 $cos\theta=-1$이 되어야 하므로 $\theta=180$ (두 벡터가 <span style="color:cyan">반대</span> 방향)이 되어야 한다. 
