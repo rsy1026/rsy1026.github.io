@@ -69,12 +69,8 @@ use_math: true
 <span style="color:orange">벡터</span>는 직교좌표계 상의 각 축에 대한 성분의 합으로 나타낼 수 있다. 만약 원점이 $O$인 2차원 평면좌표가 있을 때, $A(a_1,a_2)$를 종점으로 하는 임의의 벡터 $\overrightarrow{a}$에 대해 다음과 같이 표현할 수 있다:
 ![image info](/assets/img/vector.png){: width="70%"}
 *이 [링크](https://jwmath.tistory.com/490)의 이미지를 재구성했습니다.*
-\\[\overrightarrow{a}=\overrightarrow{OA}=\overrightarrow{OA_1}+\overrightarrow{OA_2}=a_1\overrightarrow{e_1}+a_2\overrightarrow{e_2}=a_1\begin{bmatrix} 1\\
-0 \end{bmatrix}+a_2\begin{bmatrix} 0\\
-1 \end{bmatrix}=[a_1,a_2]\\]
-\\[\overrightarrow{e_1}=\begin{bmatrix} 1\\
-0 \end{bmatrix},\overrightarrow{e_2}=\begin{bmatrix} 0\\
-1 \end{bmatrix}\\]
+\\[\overrightarrow{a}=\overrightarrow{OA}=\overrightarrow{OA_1}+\overrightarrow{OA_2}=a_1\overrightarrow{e_1}+a_2\overrightarrow{e_2}=a_1{\begin{bmatrix}1\\0\end{bmatrix}}+a_2{\begin{bmatrix}0\\1\end{bmatrix}}=[a_1,a_2]\\]
+\\[\overrightarrow{e_1}={\begin{bmatrix}1\\0\end{bmatrix}},\overrightarrow{e_2}={\begin{bmatrix}0\\1\end{bmatrix}}\\]
 이 때 실수 $a_1, a_2$는 각각 $x$축과 $y$축의 <span style="color:orange">성분</span>이고, $\overrightarrow{e_1},\overrightarrow{e_2}$는 각각 $x$축과 $y$축의 방향을 가지고 두 점 $E_1(0,1)$와 $E_2(1,0)$을 종점으로 하는 크기가 1인 벡터, <span style="color:orange">단위 벡터</span>이다. 즉, 각 축에 대한 단위 벡터의 방향과 각각 $a_1, a_2$의 크기를 가지는 두 벡터 $\overrightarrow{OA_1}, \overrightarrow{OA_2}$의 합이라고 할 수 있다.
 $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기는 다음과 같이 피타고라스의 정의에 의해 나타낼 수 있다:
 \\[\vert{\overrightarrow{a}}\vert=\sqrt{(a_1)^2+(a_2)^2}\\]
