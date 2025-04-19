@@ -90,11 +90,11 @@ use_math: true
         =\overrightarrow{OA_1}+\overrightarrow{OA_2}
         =a_1\overrightarrow{e_1}+a_2\overrightarrow{e_2}
         =a_1\begin{bmatrix}
-            1 \\
+            1\\\\ 
             0
             \end{bmatrix}
         +a_2\begin{bmatrix}
-            0 \\
+            0\\\\ 
             1
             \end{bmatrix}
         =[a_1,a_2]
@@ -105,12 +105,12 @@ use_math: true
     \begin{aligned}
         \overrightarrow{e_1}
         =\begin{bmatrix}
-            1 \\ 
+            1\\\\ 
             0
             \end{bmatrix},
         \overrightarrow{e_2}
         =\begin{bmatrix}
-            0 \\ 
+            0\\\\ 
             1
             \end{bmatrix}
         \end{aligned}
@@ -128,23 +128,23 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
     \begin{aligned}
         \overrightarrow{v}
         =\begin{bmatrix}
-            a \\\\\\\\
-            b \\\\\\\\
+            a\\\\ 
+            b\\\\ 
             c
             \end{bmatrix}
         =a\begin{bmatrix}
-            1 \\\\\\\\ 
-            0 \\\\\\\\ 
+            1\\\\ 
+            0\\\\ 
             0 
             \end{bmatrix}
         +b\begin{bmatrix}
-            0 \\\\\\\\
-            1 \\\\\\\\
+            0\\\\ 
+            1\\\\ 
             0
             \end{bmatrix}
         +c\begin{bmatrix}
-            0 \\\\\\\\ 
-            0 \\\\\\\\ 
+            0\\\\ 
+            0\\\\ 
             1
             \end{bmatrix}
         =a\hat{i}+b\hat{j}+c\hat{k}
@@ -154,20 +154,20 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
     \begin{aligned}
         \hat{i}
         =\begin{bmatrix}
-            1 \\\\\\\\
-            0 \\\\\\\\
+            1\\\\ 
+            0\\\\ 
             0
             \end{bmatrix},
         \hat{j}
         =\begin{bmatrix}
-            0 \\\\\\\\
-            1 \\\\\\\\
+            0\\\\ 
+            1\\\\ 
             0
             \end{bmatrix},
         \hat{k}
         =\begin{bmatrix}
-            0 \\\\\\\\ 
-            0 \\\\\\\\ 
+            0\\\\  
+            0\\\\  
             1
             \end{bmatrix}
     \end{aligned}
@@ -192,7 +192,7 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
     f_x(a_0)=\lim_{h\to0}\frac{f(a_0+h\hat{i})-f(a_0)}{h}
     \\]
 
-이 때, $\begin{aligned}\hat{i}=\begin{bmatrix}1\\\\\\\\0\end{bmatrix}\end{aligned}$는 $x$축에 대한 단위 벡터이다. \
+이 때, $\begin{aligned}\hat{i}=\begin{bmatrix}1\\\\0\end{bmatrix}\end{aligned}$는 $x$축에 대한 단위 벡터이다. \
 <span style="color:orange">전미분</span>이란, 다변량함수에서 **모든** 변수들이 움직였을 때에 대한 함수값의 ``변화율``을 의미한다. 모든 변수에 대한 변화율을 종합하여 나타낸 미소 변화량 표현을 **전도함수**(total differential)라고 부르며, $\partial$ 표시 대신 $d$ 표시로서 나타낸다. 만약 다변량함수 $f(x,y,z,...)$가 있을 때 해당 함수의 전도함수는 다음과 같다:
 
 \\[
