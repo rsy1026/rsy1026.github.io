@@ -248,13 +248,13 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
 정리하면, *함수값의 미소한 변화량은, 함수값이 얼마나 빠르게 변화하는지를 나타내는 **그래디언트**와 독립변수(입력) 벡터의 이동 거리와 방향을 나타내는 **미소변위벡터**의 내적으로 표현될 수 있다*. 이 때, 미소변위벡터 자체는 특정한 방향의 미소 이동만을 나타내지만, 만약 이를 임의의 방향으로 설정할 수 있다면 이는 모든 독립변수의 가능한 방향, 즉 **입력 공간 전체의 방향**을 일반적으로 포함하는 개념이 된다.
 따라서 이 내적 표현은 <span style="color:cyan">임의의 방향과 거리에서의 함수값의 변화율</span>을 기술하는 수식이 되어, 함수가 입력값들의 모든 방향 변화에 어떻게 반응하는지, 즉 함수의 **전방위 반응 구조**를 나타낸다고 볼 수 있다.
 
-위 식으로부터 비롯된 다변수 그래디언트 $\nabla{f}$와 해당 그래디언트의 크기 $||\nabla{f}||$를 정의하면 아래 식과 같다:
+위 식으로부터 비롯된 다변수 그래디언트 $\nabla{f}$와 해당 그래디언트의 크기 $\Vert\nabla{f}\Vert$를 정의하면 아래 식과 같다:
 
 \\[
     \nabla{f}=(\frac{\partial{f}}{\partial{x_1}},\frac{\partial{f}}{\partial{x_2}},...,\frac{\partial{f}}{\partial{x_n}})=\frac{\partial{f}}{\partial{x}}=\nabla_x{f(x)}
     \\]
 \\[
-    ||\nabla{f}||=\sqrt{\Big(\frac{\partial{f}}{\partial{x_1}}\Big)^2+\Big(\frac{\partial{f}}{\partial{x_2}}\Big)^2+...+\Big(\frac{\partial{f}}{\partial{x_n}}\Big)^2}
+    \Vert\nabla{f}\Vert=\sqrt{\Big(\frac{\partial{f}}{\partial{x_1}}\Big)^2+\Big(\frac{\partial{f}}{\partial{x_2}}\Big)^2+...+\Big(\frac{\partial{f}}{\partial{x_n}}\Big)^2}
     \\]
 
 <span style="color:orange">그래디언트 벡터의 **크기**</span>는 모든 독립변수에 대한 ``변화율의 크기``를 의미한다. 즉, 모든 독립변수에 대해 함수값이 얼마나 빠르게 변화하는 지에 대한 증감의 강도를 나타낸다. 여기에서 용어적으로 헷갈릴 수 있는데, **변화의 방향이 무시**된 절대적인 변화의 강도(세기)라고 생각하면 된다. 이 크기가 가장 큰 방향으로 이동하면 함수값이 가장 크게 증가하며, 뒤에 설명할 **방향도함수**의 정의에 의해, 그래디언트는 <span style="color:cyan">함수값이 가장 크게 증가하는 방향과 그 증가의 강도</span>를 나타낸다고 할 수 있다.
@@ -346,7 +346,7 @@ $g(z)$는 입력값을 $\vec{u}$ 방향으로 이동시키는 함수이므로, $
 결과적으로, 방향도함수 $D_{\overrightarrow{u}}f$는, 다변량함수 $f$의 그래디언트(``변화율`` 벡터) $\nabla f$와 임의의 방향벡터 $\overrightarrow{u}$ 간의 내적으로 표현될 수 있다: 
 
 \\[
-    D_{\overrightarrow{u}}f(x,y)=D_{\overrightarrow{u}}f=\nabla f\cdot \overrightarrow{u}=||\nabla f||||\overrightarrow{u}||cos\theta=||\nabla f||cos\theta
+    D_{\overrightarrow{u}}f(x,y)=D_{\overrightarrow{u}}f=\nabla f\cdot \overrightarrow{u}=\Vert\nabla f\Vert\Vert\overrightarrow{u}/Vertcos\theta=\Vert\nabla f/Vertcos\theta
     \\]
 
 이 때 $\theta$는 <span style="color:orange">다변수 그래디언트 벡터와 방향벡터 사이의 사잇각</span>이다. $D_{\overrightarrow{u}}f$가 $\theta$는 <span style="color:cyan">최대값</span>이 되려면 $cos\theta=1$이 되어야 하므로 $\theta=0$ (두 벡터가 <span style="color:cyan">같은</span> 방향)이 되어야 하고, 반대로 $D_{\overrightarrow{u}}f$가 <span style="color:cyan">최소값</span>이 되려면 $cos\theta=-1$이 되어야 하므로 $\theta=180$ (두 벡터가 <span style="color:cyan">반대</span> 방향)이 되어야 한다. 
@@ -413,7 +413,7 @@ $g(z)$는 입력값을 $\vec{u}$ 방향으로 이동시키는 함수이므로, $
 \\[
     w^{t+1}_n=w^{t}_n-\epsilon\nabla f(w^{t})
     \\]
-    
+
 위 첫 번째 식은 가중치 벡터 전체의 이동 방향에 대해 업데이트하는 식이고, 두 번째 식은 가중치의 각 차원에 대해 이동 방향을 투영하여 업데이트하는 식이다. 
 
 &nbsp;
