@@ -59,7 +59,7 @@ use_math: true
 이 파트에서는 "그래디언트"를 이해하기 전에 알아야하는 수학 개념들을 정리한다.
 ## 평균변화율, 미분계수, 도함수
 <span style="color:orange">평균변화율</span>이란, $y=f(x)$일 때 함수 내 주어진 구간에서 $y$가 $x$에 비해 평균적으로 얼마나 증가하는지, 혹은 한 단위당 얼만큼 증가하는지를 뜻한다. 기하학적으로는, 함수 내 주어진 구간의 양 끝점을 잇는 직선의 기울기이다:
-$$\frac{\triangle{y}}{\triangle{x}}=\frac{f(b)-f(a)}{b-a}=\frac{f(a+h)-f(a)}{h}$$
+\\[frac{\triangle{y}}{\triangle{x}}=\frac{f(b)-f(a)}{b-a}=\frac{f(a+h)-f(a)}{h}\\]
 <span style="color:orange">미분계수</span>란, 함수 $y=f(x)$에서 $x=a$일 때 $x$의 증가량이 0에 가까워질 때의 평균변화율을 의미한다. 기하학적으로는, 함수 $y=f(x)$ 상에 있는 점 $(a, f(a))$에서의 접선의 기울기, 즉 **순간변화율**을 의미한다:
 $$f'(a)=\lim_{\triangle{x}\to0}\frac{\triangle{y}}{\triangle{x}}=\lim_{\triangle{x}\to0}\frac{f(a+\triangle{x})-f(a)}{\triangle{x}}=\lim_{h\to0}\frac{f(a+h)-f(a)}{h}$$
 <span style="color:orange">도함수(derivative)</span>란, 함수 $y=f(x)$가 정의한 구간 중에서 미분 가능한 모든 $x$에 대해 해당 점에서의 미분계수를 대응시키는 **함수**이다. 즉, 각 $x$에서의 순간변화율(기울기)을 구한 값을 모은 함수이다:
