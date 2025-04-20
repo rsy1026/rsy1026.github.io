@@ -8,14 +8,6 @@ tags:
     - Directional Derivative
 use_math: true
 ---
-<script src="https://utteranc.es/client.js"
-        repo="rsy1026/rsy1026.github.io-comments"
-        issue-term="pathname"
-        theme="github-dark"
-        crossorigin="anonymous"
-        async>
-</script>
-
 
 딥러닝 공부를 하는 입장에서 "**경사하강법(gradient descent)이 뭐야?**" 라는 질문을 갑자기 받게 되었을 때를 상상하면 자신있게 한 마디로 딱 답을 하기 정말 어려웠다. 고등학교부터 대학교 때까지 수학을 포기했던 공식 수포자로서 "그래디언트"라는 개념부터 필자에게는 너무 막연한 개념이었다. 이 포스트는 경사하강법에 대해 묻는 질문에 스스로 잘 대답할 수 있도록, 공부가 너무 부족했던 기본 개념부터 누적해서 정리한 포스트이다. 개인적으로 검색하며 모아두었던 여러 참고자료들을 취합하고 챗지피티로 검토하며 작성하였다.
 
@@ -424,3 +416,11 @@ $g(z)$는 입력값을 $\vec{u}$ 방향으로 이동시키는 함수이므로, $
 - 이 때 내적의 정의에 따라, $\overrightarrow{u}$ 방향 벡터가 다변량함수의 그래디언트 벡터 $\nabla f$와 <span style="color:orange">반대 방향</span>이어야 목적함수의 변화율이 최소가 될 수 있다.
 - 다시 말해, 입력 벡터가 그래디언트 벡터 $\nabla f$와 반대 방향(음의 부호)으로 움직여야 목적함수를 최소화할 수 있다. (양의 기울기 → 음의 방향 / 음의 기울기 → 양의 방향)
 - 실제 경사하강법을 구현할 때에는, 그래디언트 벡터의 각 요소가 **편미분**이므로, <span style="color:orange">입력 벡터 전체의 이동 방향을 각 차원에 대해 투영</span>하여 각 입력 차원을 **독립적**으로 업데이트한다.
+
+<script src="https://utteranc.es/client.js"
+        repo="rsy1026/rsy1026.github.io-comments"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
