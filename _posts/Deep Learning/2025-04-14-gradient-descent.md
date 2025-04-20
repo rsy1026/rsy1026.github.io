@@ -30,7 +30,7 @@ use_math: true
 - [기본개념 - 도함수의 정의](https://bhsmath.tistory.com/172)
 - [벡터의 성분](https://jwmath.tistory.com/490)
 - [벡터의 성분과 단위 벡터](https://m.blog.naver.com/seolgoons/222031443313)
-- ML 기초 - 수포자가 이해한 미분과 편미분 (feat. 경사하강법)](https://airsbigdata.tistory.com/191)
+- [ML 기초 - 수포자가 이해한 미분과 편미분 (feat. 경사하강법)](https://airsbigdata.tistory.com/191)
 - [편미분과 전미분](https://velog.io/@swan9405/%ED%8E%B8%EB%AF%B8%EB%B6%84%EA%B3%BC-%EC%A0%84%EB%AF%B8%EB%B6%84)
 - [구면좌표계 속도벡터 쉽게 구하는 방법!](https://post.naver.com/viewer/postView.nhn?volumeNo=29238751&memberNo=28329369)
 - [다변수함수의 연쇄법칙(Chain Rule)](https://blog.naver.com/mindo1103/90103548178)
