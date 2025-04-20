@@ -209,10 +209,10 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
 경사하강법을 공부하는 과정에서 그래디언트와 방향도함수를 함께 설명하는 글들을 많이 찾을 수 있었는데, 그 이유가 있었다. 
 그래디언트와 방향도함수의 관계, 그리고 경사하강법으로 이어지는 맥락을 큰 그림으로 먼저 파악하는 과정이 중요한 것 같다. 크게 정리해보면 다음과 같다:
 
-> - <span style="color:orange">그래디언트</span>는 <span style="color:cyan">함수값이 가장 빠르게 증가하는 방향과 그 증가의 강도</span>를 나타내는 벡터이다.
+> - <span style="color:orange">그래디언트</span>는 <span style="color:lightskyblue">함수값이 가장 빠르게 증가하는 방향과 그 증가의 강도</span>를 나타내는 벡터이다.
 > - <span style="color:orange">방향도함수</span>는 그래디언트와 방향벡터의 내적으로 이루어져 있고, 각 독립변수가 특정 방향으로 단위 거리만큼 이동했을 때의 함수값의 ``변화율``을 나타낸다. 
-> - 다변량함수의 경우 방향도함수의 정의에 따라, 함수값의 변화율이 최대가 되려면 **입력 벡터**의 변화 방향이 그래디언트 벡터와 <span style="color:cyan">같은 방향</span>, 최소가 되려면 그래디언트 벡터와 <span style="color:cyan">반대 방향</span>이어야 한다.
-> - <span style="color:orange">경사하강법</span>은 목적함수(cost function)의 ```변화율``` 혹은 **기울기**가 최소인 지점을 찾는 방법으로, **입력 벡터**를 그래디언트와 <span style="color:cyan">반대 방향</span>으로 점진적으로 이동시킨다.  
+> - 다변량함수의 경우 방향도함수의 정의에 따라, 함수값의 변화율이 최대가 되려면 **입력 벡터**의 변화 방향이 그래디언트 벡터와 <span style="color:lightskyblue">같은 방향</span>, 최소가 되려면 그래디언트 벡터와 <span style="color:lightskyblue">반대 방향</span>이어야 한다.
+> - <span style="color:orange">경사하강법</span>은 목적함수(cost function)의 ```변화율``` 혹은 **기울기**가 최소인 지점을 찾는 방법으로, **입력 벡터**를 그래디언트와 <span style="color:lightskyblue">반대 방향</span>으로 점진적으로 이동시킨다.  
 
 ### 그래디언트 (Gradient)
 
@@ -234,10 +234,10 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
     dT=\Big(\frac{\partial{t}}{\partial{x}}\hat{i}+\frac{\partial{t}}{\partial{y}}\hat{j}+\frac{\partial{t}}{\partial{z}}\hat{k}\Big)\cdot(dx\hat{i}+dy\hat{j}+dz\hat{k})=\nabla{T}\cdot d\vec{s}
     \\]
 
-위 식에서 편미분으로 이루어진 벡터가 **그래디언트**(gradient) $\nabla{T}$ 이고, 미소변화량으로 이루어진 벡터가 **미소변위벡터** $d\vec{s}$이다. <span style="color:orange">그래디언트</span>는 각 독립변수의 ``변화율``로 이루어진 벡터로, 함수값이 <span style="color:cyan">"어떤" 방향으로 얼마나 빠르게 변화하는 지</span>를 나타낸다. <span style="color:orange">미소변위벡터</span>란, 직교좌표계에서 어떤 순간에 어느 한 지점 $(x,y,z)$에서 다른 지점 $(x+dx, y+dy, z+dz)$으로 <span style="color:cyan">아주 짧게 이동할 때의 한 방향과 미소한 거리</span>에 대한 벡터이다.
+위 식에서 편미분으로 이루어진 벡터가 **그래디언트**(gradient) $\nabla{T}$ 이고, 미소변화량으로 이루어진 벡터가 **미소변위벡터** $d\vec{s}$이다. <span style="color:orange">그래디언트</span>는 각 독립변수의 ``변화율``로 이루어진 벡터로, 함수값이 <span style="color:lightskyblue">"어떤" 방향으로 얼마나 빠르게 변화하는 지</span>를 나타낸다. <span style="color:orange">미소변위벡터</span>란, 직교좌표계에서 어떤 순간에 어느 한 지점 $(x,y,z)$에서 다른 지점 $(x+dx, y+dy, z+dz)$으로 <span style="color:lightskyblue">아주 짧게 이동할 때의 한 방향과 미소한 거리</span>에 대한 벡터이다.
 
 정리하면, *함수값의 미소한 변화량은, 함수값이 얼마나 빠르게 변화하는지를 나타내는 **그래디언트**와 독립변수(입력) 벡터의 이동 거리와 방향을 나타내는 **미소변위벡터**의 내적으로 표현될 수 있다*. 이 때, 미소변위벡터 자체는 특정한 방향의 미소 이동만을 나타내지만, 만약 이를 임의의 방향으로 설정할 수 있다면 이는 모든 독립변수의 가능한 방향, 즉 **입력 공간 전체의 방향**을 일반적으로 포함하는 개념이 된다.
-따라서 이 내적 표현은 <span style="color:cyan">임의의 방향과 거리에서의 함수값의 변화율</span>을 기술하는 수식이 되어, 함수가 입력값들의 모든 방향 변화에 어떻게 반응하는지, 즉 함수의 **전방위 반응 구조**를 나타낸다고 볼 수 있다.
+따라서 이 내적 표현은 <span style="color:lightskyblue">임의의 방향과 거리에서의 함수값의 변화율</span>을 기술하는 수식이 되어, 함수가 입력값들의 모든 방향 변화에 어떻게 반응하는지, 즉 함수의 **전방위 반응 구조**를 나타낸다고 볼 수 있다.
 
 위 식으로부터 비롯된 다변수 그래디언트 $\nabla{f}$와 해당 그래디언트의 크기 $\Vert\nabla{f}\Vert$를 정의하면 아래 식과 같다:
 
@@ -248,10 +248,10 @@ $A(a_1,a_2)$를 종점으로 하는 평면 벡터 $\overrightarrow{a}$의 크기
     \Vert\nabla{f}\Vert=\sqrt{\Big(\frac{\partial{f}}{\partial{x_1}}\Big)^2+\Big(\frac{\partial{f}}{\partial{x_2}}\Big)^2+...+\Big(\frac{\partial{f}}{\partial{x_n}}\Big)^2}
     \\]
 
-<span style="color:orange">그래디언트 벡터의 **크기**</span>는 모든 독립변수에 대한 ``변화율의 크기``를 의미한다. 즉, 모든 독립변수에 대해 함수값이 얼마나 빠르게 변화하는 지에 대한 증감의 강도를 나타낸다. 여기에서 용어적으로 헷갈릴 수 있는데, **변화의 방향이 무시**된 절대적인 변화의 강도(세기)라고 생각하면 된다. 이 크기가 가장 큰 방향으로 이동하면 함수값이 가장 크게 증가하며, 뒤에 설명할 **방향도함수**의 정의에 의해, 그래디언트는 <span style="color:cyan">함수값이 가장 크게 증가하는 방향과 그 증가의 강도</span>를 나타낸다고 할 수 있다.
+<span style="color:orange">그래디언트 벡터의 **크기**</span>는 모든 독립변수에 대한 ``변화율의 크기``를 의미한다. 즉, 모든 독립변수에 대해 함수값이 얼마나 빠르게 변화하는 지에 대한 증감의 강도를 나타낸다. 여기에서 용어적으로 헷갈릴 수 있는데, **변화의 방향이 무시**된 절대적인 변화의 강도(세기)라고 생각하면 된다. 이 크기가 가장 큰 방향으로 이동하면 함수값이 가장 크게 증가하며, 뒤에 설명할 **방향도함수**의 정의에 의해, 그래디언트는 <span style="color:lightskyblue">함수값이 가장 크게 증가하는 방향과 그 증가의 강도</span>를 나타낸다고 할 수 있다.
 
 ### 방향도함수 (Directional Derivative)
-위에서 함수값 $T$의 미소변화량은 **그래디언트**와 **미소변위벡터**의 내적으로 표현될 수 있다고 하였다. 이 때, 임의의 방향 대신 "하나의 특정 방향"과 미소한 거리를 "단위 거리"로 제한하였을 때의 변화율을 보는 것이 바로 **방향도함수**(directional derivative)이다. 다시 말해, <span style="color:orange">방향도함수</span>란 입력값을 **특정 방향**으로 **단위 거리**만큼 움직였을 때의 함수값의 변화율을 의미한다. 따라서 방향도함수는 그래디언트와 거리가 포함되지 않은 **방향벡터**와의 내적으로 표현되며, <span style="color:cyan">그래디언트가 특정 방향에 대해 얼마나 투영(projection)되는 지</span>를 보여준다:
+위에서 함수값 $T$의 미소변화량은 **그래디언트**와 **미소변위벡터**의 내적으로 표현될 수 있다고 하였다. 이 때, 임의의 방향 대신 "하나의 특정 방향"과 미소한 거리를 "단위 거리"로 제한하였을 때의 변화율을 보는 것이 바로 **방향도함수**(directional derivative)이다. 다시 말해, <span style="color:orange">방향도함수</span>란 입력값을 **특정 방향**으로 **단위 거리**만큼 움직였을 때의 함수값의 변화율을 의미한다. 따라서 방향도함수는 그래디언트와 거리가 포함되지 않은 **방향벡터**와의 내적으로 표현되며, <span style="color:lightskyblue">그래디언트가 특정 방향에 대해 얼마나 투영(projection)되는 지</span>를 보여준다:
 
 \\[
     \frac{dT}{ds}=\nabla{F}\cdot \vec{v}
@@ -340,9 +340,9 @@ $g(z)$는 입력값을 $\vec{u}$ 방향으로 이동시키는 함수이므로, $
     D_{\overrightarrow{u}}f(x,y)=D_{\overrightarrow{u}}f=\nabla f\cdot \overrightarrow{u}=\Vert\nabla f\Vert\Vert\overrightarrow{u}\Vert cos\theta=\Vert\nabla f\Vert cos\theta
     \\]
 
-이 때 $\theta$는 <span style="color:orange">다변수 그래디언트 벡터와 방향벡터 사이의 사잇각</span>이다. $D_{\overrightarrow{u}}f$가 $\theta$는 <span style="color:cyan">최대값</span>이 되려면 $cos\theta=1$이 되어야 하므로 $\theta=0$ (두 벡터가 <span style="color:cyan">같은</span> 방향)이 되어야 하고, 반대로 $D_{\overrightarrow{u}}f$가 <span style="color:cyan">최소값</span>이 되려면 $cos\theta=-1$이 되어야 하므로 $\theta=180$ (두 벡터가 <span style="color:cyan">반대</span> 방향)이 되어야 한다. 
+이 때 $\theta$는 <span style="color:orange">다변수 그래디언트 벡터와 방향벡터 사이의 사잇각</span>이다. $D_{\overrightarrow{u}}f$가 $\theta$는 <span style="color:lightskyblue">최대값</span>이 되려면 $cos\theta=1$이 되어야 하므로 $\theta=0$ (두 벡터가 <span style="color:lightskyblue">같은</span> 방향)이 되어야 하고, 반대로 $D_{\overrightarrow{u}}f$가 <span style="color:lightskyblue">최소값</span>이 되려면 $cos\theta=-1$이 되어야 하므로 $\theta=180$ (두 벡터가 <span style="color:lightskyblue">반대</span> 방향)이 되어야 한다. 
 
-따라서, 그래디언트 벡터는 그 자체로 함수값의 특정 방향으로의 변화율이 최대가 되는, 즉 <span style="color:cyan">함수값이 가장 빠르게 변하는 방향과 크기</span>를 나타낸다고 할 수 있다. 반대로, **함수값의 특정 방향으로의 변화율이 최소가 되려면 입력 벡터가 그래디언트와 반대 방향으로 이동해야 함**을 알 수 있다.
+따라서, 그래디언트 벡터는 그 자체로 함수값의 특정 방향으로의 변화율이 최대가 되는, 즉 <span style="color:lightskyblue">함수값이 가장 빠르게 변하는 방향과 크기</span>를 나타낸다고 할 수 있다. 반대로, **함수값의 특정 방향으로의 변화율이 최소가 되려면 입력 벡터가 그래디언트와 반대 방향으로 이동해야 함**을 알 수 있다.
 
 &nbsp;
 ## 경사하강법 (Gradient Descent)
