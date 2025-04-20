@@ -12,41 +12,29 @@ use_math: true
 
 딥러닝 공부를 하는 입장에서 "**경사하강법(gradient descent)이 뭐야?**" 라는 질문을 갑자기 받게 되었을 때를 상상하면 자신있게 한 마디로 딱 답을 하기 정말 어려운 개념인 것 같다. 고등학교부터 대학교 때까지 수학을 포기했던 공식 수포자로서 "그래디언트"라는 개념부터 필자에게는 너무 막연한 개념이었다. 이 포스트는 경사하강법에 대해 묻는 질문에 스스로 논리정연하게 잘 대답할 수 있도록 정리한 포스트이다. 개인적으로 그래디언트를 이해하기 위해 검색하면서 모아두었던 여러 참고자료들을 취합하고 챗지피티로 검토하며 정리하였다. \
 (오류가 있다면 무엇이든 지적해주시면 감사드리겠습니다)
-<details>
-<summary>참고 자료</summary>
-<ul>
-    <li>경사하강법
 
-[경사하강법(gradient descent) - 공돌이의 수학정리노트 (Angelo's Math Notes)](https://angeloyeo.github.io/2020/08/16/gradient_descent.html)\
-[Directional derivatives와 gradient descent method](https://m.blog.naver.com/enewltlr/220912511268)
-</li>
-</ul>
-<ul>
-    <li>그래디언트 및 방향도함수
+### 참고 자료
+경사하강법
+- [경사하강법(gradient descent) - 공돌이의 수학정리노트 (Angelo's Math Notes)](https://angeloyeo.github.io/2020/08/16/gradient_descent.html)
+- [Directional derivatives와 gradient descent method](https://m.blog.naver.com/enewltlr/220912511268)
 
-[Calculus III - Directional Derivatives](https://tutorial.math.lamar.edu/classes/calciii/directionalderiv.aspx)\
-[편미분∂ 전미분d 변화량Δ 그래디언트∇](https://velog.io/@seokjin1013/%ED%8E%B8%EB%AF%B8%EB%B6%84%EA%B3%BC-%EC%A0%84%EB%AF%B8%EB%B6%84)\
-[그래디언트와 방향도함수(Gradient operator and directional derivative)](https://m.blog.naver.com/cindyvelyn/222147143662)\
-[[머신러닝을 위한 기초수학] - 다변수함수와 그래디언트](https://velog.io/@zlddp723/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%B4%88%EC%88%98%ED%95%99-%EB%8B%A4%EB%B3%80%EC%88%98%ED%95%A8%EC%88%98%EC%99%80-%EA%B7%B8%EB%9E%98%EB%94%94%EC%96%B8%ED%8A%B8)\
-[Why the gradient is the direction of steepest ascent](https://youtu.be/TEB2z7ZlRAw?si=I-sAcrIsdlXMJjZJ)
-</li>
-</ul>
-<ul>
-    <li>수학 개념들
+그래디언트 및 방향도함수
+- [Calculus III - Directional Derivatives](https://tutorial.math.lamar.edu/classes/calciii/directionalderiv.aspx)
+- [편미분∂ 전미분d 변화량Δ 그래디언트∇](https://velog.io/@seokjin1013/%ED%8E%B8%EB%AF%B8%EB%B6%84%EA%B3%BC-%EC%A0%84%EB%AF%B8%EB%B6%84)
+- [그래디언트와 방향도함수(Gradient operator and directional derivative)](https://m.blog.naver.com/cindyvelyn/222147143662)
+- [머신러닝을 위한 기초수학 - 다변수함수와 그래디언트](https://velog.io/@zlddp723/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EC%9D%84-%EC%9C%84%ED%95%9C-%EA%B8%B0%EC%B4%88%EC%88%98%ED%95%99-%EB%8B%A4%EB%B3%80%EC%88%98%ED%95%A8%EC%88%98%EC%99%80-%EA%B7%B8%EB%9E%98%EB%94%94%EC%96%B8%ED%8A%B8)
+- [Why the gradient is the direction of steepest ascent](https://youtu.be/TEB2z7ZlRAw?si=I-sAcrIsdlXMJjZJ)
+  
+수학 개념들
+- [Khan Academy - 평균변화율 복습](https://ko.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:average-rate-of-change-word-problems/a/average-rate-of-change-review)
+- [기본개념 - 도함수의 정의](https://bhsmath.tistory.com/172)
+- [벡터의 성분](https://jwmath.tistory.com/490)
+- [벡터의 성분과 단위 벡터](https://m.blog.naver.com/seolgoons/222031443313)
+- ML 기초 - 수포자가 이해한 미분과 편미분 (feat. 경사하강법)](https://airsbigdata.tistory.com/191)
+- [편미분과 전미분](https://velog.io/@swan9405/%ED%8E%B8%EB%AF%B8%EB%B6%84%EA%B3%BC-%EC%A0%84%EB%AF%B8%EB%B6%84)
+- [구면좌표계 속도벡터 쉽게 구하는 방법!](https://post.naver.com/viewer/postView.nhn?volumeNo=29238751&memberNo=28329369)
+- [다변수함수의 연쇄법칙(Chain Rule)](https://blog.naver.com/mindo1103/90103548178)
 
-[Khan Academy - 평균변화율 복습](https://ko.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:average-rate-of-change-word-problems/a/average-rate-of-change-review)\
-[[기본개념] 도함수의 정의](https://bhsmath.tistory.com/172)\
-[벡터의 성분](https://jwmath.tistory.com/490)\
-[벡터의 성분과 단위 벡터](https://m.blog.naver.com/seolgoons/222031443313)\
-[[ML 기초] 수포자가 이해한 미분과 편미분 (feat. 경사하강법)](https://airsbigdata.tistory.com/191)\
-[편미분과 전미분](https://velog.io/@swan9405/%ED%8E%B8%EB%AF%B8%EB%B6%84%EA%B3%BC-%EC%A0%84%EB%AF%B8%EB%B6%84)
-[구면좌표계 속도벡터 쉽게 구하는 방법!](https://post.naver.com/viewer/postView.nhn?volumeNo=29238751&memberNo=28329369)\
-[다변수함수의 연쇄법칙(Chain Rule)](https://blog.naver.com/mindo1103/90103548178)
-</li>
-</ul>
-</details>
-
-   
 &nbsp;
 # 용어 정리 
 ---
