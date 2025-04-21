@@ -417,6 +417,8 @@ $g(z)$는 입력값을 $\vec{u}$ 방향으로 이동시키는 함수이므로, $
 - 다시 말해, 입력 벡터가 그래디언트 벡터 $\nabla f$와 반대 방향(음의 부호)으로 움직여야 목적함수를 최소화할 수 있다. (양의 기울기 → 음의 방향 / 음의 기울기 → 양의 방향)
 - 실제 경사하강법을 구현할 때에는, 그래디언트 벡터의 각 요소가 **편미분**이므로, <span style="color:orange">입력 벡터 전체의 이동 방향을 각 차원에 대해 투영</span>하여 각 입력 차원을 **독립적**으로 업데이트한다.
 
+&nbsp;
+&nbsp;
 <script src="https://utteranc.es/client.js"
         repo="rsy1026/rsy1026.github.io-comments"
         issue-term="pathname"
