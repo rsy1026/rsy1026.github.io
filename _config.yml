@@ -113,8 +113,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Clara Rhyu"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : #"Clara Rhyu"
+  avatar           : "/assets/images/favicon/favicon.ico"
   bio              : "Bridging the gap between Symbolic Data and AI."
   location         : "Somewhere"
   email            :
