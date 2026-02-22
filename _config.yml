@@ -17,9 +17,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Clara's Symbolic Log"
+title                    : "Clara's Tech Blog"
 title_separator          : "-"
-subtitle                 : "Bridging the gap between Symbolic Data and AI"
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Seungyeon Rhyu"
 description              : "Studying & Developing."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -113,9 +113,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Clara Rhyu"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Bridging the gap between Symbolic Data and AI."
   location         : "Somewhere"
   email            :
   links:
