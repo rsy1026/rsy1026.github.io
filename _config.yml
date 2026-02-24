@@ -116,7 +116,7 @@ author:
   name             : #"Clara Rhyu"
   avatar           : "/assets/images/bread.jpg"
   bio              : "Bridging the gap between Symbolic Data and AI."
-  location         : "Somewhere"
+  location         : #"Somewhere"
   email            :
   links:
     - label: "Email"
