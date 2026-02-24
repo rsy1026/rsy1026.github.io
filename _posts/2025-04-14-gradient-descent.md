@@ -6,6 +6,15 @@ tags:
     - Deep Learning
     - Gradient Descent
     - Directional Derivative
+
+permalink: /deep_learning/gradient_descent/
+
+toc: true
+toc_sticky: true
+
+date: 2025-04-14
+last_modified_at: 2025-04-14
+
 use_math: true
 ---
 
