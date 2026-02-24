@@ -4,8 +4,6 @@ categories:
     - Deep Learning
 tags: 
     - Deep Learning
-    - Gradient Descent
-    - Directional Derivative
 
 permalink: /deep_learning/gradient_descent/
 
@@ -13,12 +11,12 @@ toc: true
 toc_sticky: true
 
 date: 2025-04-14
-last_modified_at: 2025-04-14
+last_modified_at: 2026-02-24
 
 use_math: true
 ---
 
-딥러닝 공부를 하는 입장에서 "**경사하강법(gradient descent)이 뭐야?**" 라는 질문을 갑자기 받게 되었을 때를 상상하면 자신있게 한 마디로 딱 답을 하기 정말 어려웠다. 고등학교부터 대학교 때까지 수학을 포기했던 공식 수포자로서 "그래디언트"라는 개념부터 필자에게는 너무 막연한 개념이었다. 이 포스트는 경사하강법에 대해 묻는 질문에 스스로 잘 대답할 수 있도록, 공부가 너무 부족했던 기본 개념부터 누적해서 정리한 포스트이다. 개인적으로 검색하며 모아두었던 여러 참고자료들을 취합하고 챗지피티로 검토하며 작성하였다.
+이 포스트는 **경사하강법(gradient descent)**에 대해 묻는 질문에 스스로 잘 대답할 수 있도록, 공부가 너무 부족했던 기본 개념부터 누적해서 정리한 포스트이다. 개인적으로 검색하며 모아두었던 여러 참고자료들을 취합하고 챗지피티로 검토하며 작성하였다.
 
 *오류가 있다면 댓글로 무엇이든 지적해주시면 정말 감사드리겠습니다.*
 
