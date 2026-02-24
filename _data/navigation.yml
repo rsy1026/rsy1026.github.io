@@ -13,4 +13,4 @@ main:
 
 categories:
   - title: "Deep Learning"
-  - url: "/categories/deep_learning/"
+    url: "/categories/deep_learning/"
