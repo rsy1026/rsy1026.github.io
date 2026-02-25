@@ -19,6 +19,23 @@ $right-sidebar-width-wide: 300px !default;
 
 $base-line-height: 1.8; // default 1.5
 
+.site-title {
+  font-size: 2em; /* Example: adjust the value as needed */
+}
+.sidebar p, 
+.sidebar li {
+  font-size: 14px; /* Example: change to 14px */
+  /* or use a theme variable, e.g., font-size: $type-size-5; */
+}
+.sidebar h2, 
+.sidebar h3, 
+.sidebar h4 {
+  font-size: 12px; /* Example: change to 16px */
+}
+.sidebar .author__bio {
+  font-size: 12px; /* Example: change to 18px */
+}
+
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
@@ -84,19 +101,4 @@ $base-line-height: 1.8; // default 1.5
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
     font-weight: 900;
     font-display: swap;
-}
-
-
-/* 블로그 제목, 메뉴, 사이드바, 목차 폰트 확대 (1em = 기본 16px 기준) */
-.masthead__title { 
-  font-size: 1.2em; /* 블로그 제목 */
-}
-.masthead__menu-item { 
-  font-size: 1.1em; /* 상단 메뉴 */
-}
-.sidebar { 
-  font-size: 1em; /* 사이드바 전체 (프로필 등) */
-}
-.toc { 
-  font-size: 0.7em; /* 목차 */
 }
