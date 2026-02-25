@@ -25,20 +25,20 @@ $base-line-height: 1.8; // default 1.5
 
 
 .site-title {
-  font-size: 2em; /* Example: adjust the value as needed */
+  font-size: 1.2em; /* Example: adjust the value as needed */
 }
 .sidebar p, 
 .sidebar li {
-  font-size: 14px; /* Example: change to 14px */
+  font-size: 1em; /* Example: change to 14px */
   /* or use a theme variable, e.g., font-size: $type-size-5; */
 }
 .sidebar h2, 
 .sidebar h3, 
 .sidebar h4 {
-  font-size: 12px; /* Example: change to 16px */
+  font-size: 0.8em; /* Example: change to 16px */
 }
 .sidebar .author__bio {
-  font-size: 12px; /* Example: change to 18px */
+  font-size: 1em; /* Example: change to 18px */
 }
 
 
