@@ -60,10 +60,11 @@ $default-monospace: 'Nanum Gothic', Monaco, Consolas, "Lucida Console", monospac
 $emoji-native: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
 /* system typefaces */
-$serif: $default-serif !default;
-$sans-serif: $default-sans-serif !default;
-$sans-serif-narrow: $sans-serif !default;
-$monospace: $default-monospace !default;
+$customFont: 'Escoredream';
+$serif: $customFont !default;
+$sans-serif: $customFont !default;
+$sans-serif-narrow: $customFont !default;
+$monospace: $customFont !default;
 
 $global-font-family: $sans-serif !default;
 $header-font-family: $sans-serif !default;
