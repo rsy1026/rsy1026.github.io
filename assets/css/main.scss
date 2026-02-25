@@ -25,7 +25,7 @@ $base-line-height: 1.8; // default 1.5
 
 
 .site-title {
-  font-size: 1.2em; /* Example: adjust the value as needed */
+  font-size: 1.5em; /* Example: adjust the value as needed */
 }
 .sidebar p, 
 .sidebar li {
@@ -43,6 +43,9 @@ $base-line-height: 1.8; // default 1.5
 .masthead__menu {
   font-size: 1.0em;
   /* You can also add other styles here, e.g., color: red; */
+}
+.toc__menu {
+  font-size: 0.7em; // or another type-size variable
 }
 
 
