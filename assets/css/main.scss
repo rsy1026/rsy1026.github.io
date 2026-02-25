@@ -19,6 +19,8 @@ $right-sidebar-width-wide: 300px !default;
 
 $base-line-height: 1.8; // default 1.5
 
+$doc-font-size: 16px;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
