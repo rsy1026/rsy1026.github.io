@@ -29,27 +29,27 @@ $base-line-height: 1.8; // default 1.5
 
 
 .site-title {
-  font-size: 18px; /* Example: adjust the value as needed */
+  font-size: 1.5em; /* Example: adjust the value as needed */
 }
 .sidebar p, 
 .sidebar li {
-  font-size: 14px; /* Example: change to 14px */
+  font-size: 1em; /* Example: change to 14px */
   /* or use a theme variable, e.g., font-size: $type-size-5; */
 }
 .sidebar h2, 
 .sidebar h3, 
 .sidebar h4 {
-  font-size: 14px; /* Example: change to 16px */
+  font-size: 1em; /* Example: change to 16px */
 }
 .sidebar .author__bio {
-  font-size: 14px; /* Example: change to 18px */
+  font-size: 1em; /* Example: change to 18px */
 }
 .masthead__menu {
-  font-size: 16px;
+  font-size: 1.2em;
   /* You can also add other styles here, e.g., color: red; */
 }
 .toc__menu {
-  font-size: 12px; // or another type-size variable
+  font-size: 0.8em; // or another type-size variable
 }
 
 
