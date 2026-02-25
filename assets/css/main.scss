@@ -19,8 +19,8 @@ $right-sidebar-width-wide: 300px !default;
 
 $doc-font-size: 14px;
 $doc-font-size-medium: 14px;
-$doc-font-size-large: 16px;
-$doc-font-size-x-large: 18px;
+$doc-font-size-large: 15px;
+$doc-font-size-x-large: 16px;
 $base-line-height: 1.8; // default 1.5
 
 
@@ -29,7 +29,7 @@ $base-line-height: 1.8; // default 1.5
 
 
 .site-title {
-  font-size: 16px; /* Example: adjust the value as needed */
+  font-size: 18px; /* Example: adjust the value as needed */
 }
 .sidebar p, 
 .sidebar li {
@@ -39,17 +39,17 @@ $base-line-height: 1.8; // default 1.5
 .sidebar h2, 
 .sidebar h3, 
 .sidebar h4 {
-  font-size: 12px; /* Example: change to 16px */
+  font-size: 14px; /* Example: change to 16px */
 }
 .sidebar .author__bio {
   font-size: 14px; /* Example: change to 18px */
 }
 .masthead__menu {
-  font-size: 15px;
+  font-size: 16px;
   /* You can also add other styles here, e.g., color: red; */
 }
 .toc__menu {
-  font-size: 10px; // or another type-size variable
+  font-size: 12px; // or another type-size variable
 }
 
 
