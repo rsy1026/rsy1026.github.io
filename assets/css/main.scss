@@ -62,16 +62,36 @@ $base-line-height: 1.8;
 .toc__menu {
   font-size: 0.8em; 
 }
+.archive {
+    .archive__subtitle {
+        font-size: 1.2em;
+    }
+    .archive__item {
+        .archive__item-title {
+            font-size: 1.2em;
+        }
+        .archive__item-excerpt {
+            font-size: 1em;
+        }
+    }
+}
 
 
 /* 데스크탑 화면(너비 1024px 이상)에서만 적용 */
 @media (min-width: 64em) {
-  
   /* 1. 본문 텍스트 영역의 오른쪽 경계를 안쪽으로 강제 축소 (여백 공간 만들기) */
   .page__inner-wrap {
     margin-top: 4rem !important;
     padding-left: 1rem !important; 
     padding-right: 4rem !important; 
+  }
+
+  .archive {
+    margin-top: 4rem !important;
+    padding-left: 1rem !important;
+    .archive__subtitle {
+        margin-top: 0 !important;
+    }
   }
 
   /* 2. 우측 목차(TOC) 박스 전체를 오른쪽으로 2rem 만큼 강제 이동 */
