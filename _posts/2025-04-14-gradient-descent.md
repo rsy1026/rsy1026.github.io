@@ -428,7 +428,7 @@ $$
 <script src="https://utteranc.es/client.js"
         repo="rsy1026/rsy1026.github.io-comments"
         issue-term="pathname"
-        theme="github-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>
