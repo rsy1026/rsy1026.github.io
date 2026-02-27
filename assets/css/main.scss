@@ -88,7 +88,9 @@ $base-line-height: 1.8;
         }
     }
 }
-
+.author__urls-wrapper .btn {
+  display: none !important;
+}
 
 /* 데스크탑 화면(너비 1024px 이상)에서만 적용 */
 @media (min-width: 64em) {
