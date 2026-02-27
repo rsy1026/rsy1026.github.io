@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Clara's Tech Blog"
+title                    : "Clara's study log"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Seungyeon Rhyu"
@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : #"Clara Rhyu"
-  avatar           : "/assets/images/bread.jpg"
-  bio              : "Bridging the gap between Symbolic Data and AI."
+  avatar           : "/assets/images/profile2.jpeg"
+  bio              : #"Bridging the gap between Symbolic Data and AI."
   location         : #"Somewhere"
   email            :
   links:
@@ -288,9 +288,9 @@ whitelist:
 category_archive:
   type: liquid
   path: /categories/
-# tag_archive:
-#   type: liquid
-#   path: /tags/
+tag_archive:
+  type: liquid
+  path: /tags/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -322,7 +322,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       sidebar:
