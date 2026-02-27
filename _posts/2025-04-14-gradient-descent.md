@@ -1,14 +1,15 @@
 ---
 title: "경사하강법 (Gradient Descent) - 처음부터 이해하기"
 categories: 
-    - Deep Learning
+    - deep_learning
 tags: 
     - Deep Learning
 
-permalink: /deep_learning/gradient_descent/
+permalink: deep_learning/gradient_descent
 
 toc: true
 toc_sticky: true
+layout: single
 
 date: 2025-04-14
 last_modified_at: 2026-02-24

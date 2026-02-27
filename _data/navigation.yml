@@ -12,5 +12,8 @@ main:
   #   url: /sitemap/
 
 categories:
-  - title: "Deep Learning"
-    url: "/categories/deep_learning/"
+  - title: "Study"
+    children:
+    - title: "Deep Learning"
+      url: "/categories/deep_learning/"
+      category: "deep_learning"
