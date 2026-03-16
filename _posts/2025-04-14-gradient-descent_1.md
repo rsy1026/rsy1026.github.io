@@ -65,7 +65,7 @@ $$
 
 - 요소: $A, B \in M_{m \times n}$
 - 연산 규칙:
-    - 덧셈: $(A + B)_{ij} = A_{ij} + B_{ij}$ (성분별 합)
+    - 덧셈: $(A + B)_{ij} = A_{ij} + B_{ij}$
     - 스칼라 곱: $(cA)_{ij} = c \cdot A_{ij}$
 - 증명 수식:
     
@@ -114,6 +114,7 @@ $$\alpha a + \beta b = \{ \alpha a_1 + \beta b_1, \alpha a_2 + \beta b_2, \dots,
 (다만 여기서의 좌표 공간은 거리, 각도 등의 어떠한 기하학적인 약속도 정의되어 있지 않은 실수 좌표 공간이라는 점을 기억해야 합니다.)
 
 유한한 $n$차원의 벡터 공간 $V$에 기저 $B=\{v_1, v_2, ..., v_n\}$이 존재한다면, 모든 벡터 $v \in V$는 기저 벡터들의 선형 결합으로 표현될 수 있습니다: 
+
 $$
 v=c_1v_1+c_2v_2+...+c_nv_n
 $$ 
@@ -189,6 +190,7 @@ $$
             \end{bmatrix}
         \end{aligned}
         $$
+
 이 때 실수 $a_1, a_2$는 각각 $x$축과 $y$축의 <span style="color:orange">성분</span>이고, $\overrightarrow{e_1},\overrightarrow{e_2}$는 각각 $x$축과 $y$축의 방향을 가지고 두 점 $E_1(0,1)$와 $E_2(1,0)$을 종점으로 하는 크기가 1인 벡터, <span style="color:orange">단위 벡터</span>입니다. 이 단위 벡터들을 기저 벡터라고 할 수 있죠. 
 
 즉, 각 축에 대한 단위 벡터의 방향과 각각 $a_1, a_2$의 크기를 가지는 두 벡터 $\overrightarrow{OA_1}, \overrightarrow{OA_2}$의 합이라고 할 수 있습니다.
@@ -227,6 +229,7 @@ $$
         =a\hat{i}+b\hat{j}+c\hat{k}
     \end{aligned}
     $$     
+
 $$
     \begin{aligned}
         \hat{i}
@@ -249,6 +252,7 @@ $$
             \end{bmatrix}
     \end{aligned}
     $$
+
 이 때 3차원 벡터 $\overrightarrow{v}$의 크기는 마찬가지로 [피타고라스 정의](https://kukuta.tistory.com/152)를 사용하여 나타낼 수 있습니다:
 
 $$
