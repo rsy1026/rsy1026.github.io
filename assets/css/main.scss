@@ -7,9 +7,9 @@ search: false
 
 
 /* Font Variables */
-$sans-serif: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$sans-serif: 'Escoredream', 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $global-font-family: $sans-serif;
-$header-font-family: $sans-serif, 'KotraHandwritingFont', 'Escoredream';
+$header-font-family: $sans-serif, 'KotraHandwritingFont';
 $title-font-family: 'KotraHandwritingFont', 'Escoredream', sans-serif;
 
 
@@ -18,10 +18,10 @@ $right-sidebar-width-narrow: 100px;
 $right-sidebar-width: 200px;
 $right-sidebar-width-wide: 300px;
 
-$doc-font-size: 14px;
-$doc-font-size-medium: 14px;
-$doc-font-size-large: 15px;
-$doc-font-size-x-large: 16px;
+$doc-font-size: 12px;
+$doc-font-size-medium: 12px;
+$doc-font-size-large: 13px;
+$doc-font-size-x-large: 14px;
 $base-line-height: 1.8; 
 
 
@@ -72,8 +72,8 @@ $base-line-height: 1.8;
   }
 }
 .toc__menu {
-  font-family: 'KotraHandwritingFont';
-  font-size: 0.6em; 
+  font-family: 'Escoredream';
+  font-size: 0.8em; 
 }
 .archive {
     .archive__subtitle {
@@ -99,6 +99,9 @@ $base-line-height: 1.8;
     margin-top: 4rem !important;
     padding-left: 1rem !important; 
     padding-right: 4rem !important; 
+    .page__content {
+        line-height: 1.8;
+    }
   }
 
   .archive {
@@ -122,6 +125,10 @@ $base-line-height: 1.8;
   }
 }
 
+.MJXc-display {
+    margin-top: 2rem !important; 
+    margin-bottom: 2rem !important;
+}
 
 /* ================================================= */
 /* Font Faces (파일 최하단 유지 권장) */
@@ -153,7 +160,7 @@ $base-line-height: 1.8;
 @font-face {
     font-family: 'Escoredream';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
-    font-weight: 400;
+    font-weight: normal;
     font-display: swap;
 }
 
