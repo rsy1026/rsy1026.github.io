@@ -63,10 +63,10 @@ $$
 
 행렬에서 덧셈, 스칼라 곱을 거쳐서도 행렬에 속한다는 내용은 아래와 같이 전개할 수 있습니다.
 
-- 요소: $A, B \in M_{m \times n}$
+- 요소: $$A, B \in M_{m \times n}$$
 - 연산 규칙:
-    - 덧셈: $(A + B)_{ij} = A_{ij} + B_{ij}$
-    - 스칼라 곱: $(cA)_{ij} = c \cdot A_{ij}$
+    - 덧셈: $$(A + B)_{ij} = A_{ij} + B_{ij}$$
+    - 스칼라 곱: $$(cA)_{ij} = c \cdot A_{ij}$$
 - 증명 수식:
     
 $$A + B = \begin{bmatrix} a_{11}+b_{11} & a_{12}+b_{12} \\ a_{21}+b_{21} & a_{22}+b_{22} \end{bmatrix} \in M_{2 \times 2}$$
@@ -75,10 +75,10 @@ $$cA = \begin{bmatrix} ca_{11} & ca_{12} \\ ca_{21} & ca_{22} \end{bmatrix} \in 
 
 수열에 대해서도 마찬가지입니다. 무한 수열의 집합 $V = { {a_n} \mid a_n \in \mathbb{R} }$이 있을 때:
 
-- 요소: 수열 $a = \{a_1, a_2, \dots\}, b = \{b_1, b_2, \dots\}$, 스칼라 $\alpha, \beta$
+- 요소: 수열 $$a = \{a_1, a_2, \dots\}, b = \{b_1, b_2, \dots\}$$, 스칼라 $$\alpha, \beta$$
 - 연산 규칙:
-    - 덧셈: $a + b = \{a_1+b_1, a_2+b_2, \dots\}$
-    - 스칼라 곱: $a = \{\beta a_1, \beta a_2, \dots\}$
+    - 덧셈: $$a + b = \{a_1+b_1, a_2+b_2, \dots\}$$
+    - 스칼라 곱: $$a = \{\beta a_1, \beta a_2, \dots\}$$
 - 증명 수식:
     
 $$\alpha a + \beta b = \{ \alpha a_1 + \beta b_1, \alpha a_2 + \beta b_2, \dots, \alpha a_n + \beta b_n, \dots \}$$
@@ -88,10 +88,10 @@ $$\alpha a + \beta b = \{ \alpha a_1 + \beta b_1, \alpha a_2 + \beta b_2, \dots,
 
 함수 그 자체도 하나의 벡터로 볼 수 있는 근거는 아래와 같습니다. 구간 $[a, b]$에서 정의된 연속 함수의 집합 $C[a, b]$이 있을 때:
 
-- 요소: 함수 $f(x), g(x)$
+- 요소: 함수 $$f(x), g(x)$$
 - 연산 규칙:
-    - 덧셈: $(f + g)(x) = f(x) + g(x)$
-    - 스칼라 곱: $(cf)(x) = c \cdot f(x)$
+    - 덧셈: $$(f + g)(x) = f(x) + g(x)$$
+    - 스칼라 곱: $$(cf)(x) = c \cdot f(x)$$
 - 증명 수식:
     
     $$h(x) = \alpha f(x) + \beta g(x)$$
