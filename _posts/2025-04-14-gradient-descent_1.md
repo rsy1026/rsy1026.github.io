@@ -10,9 +10,12 @@ permalink: deep_learning/gradient_descent_vector
 toc: true
 toc_sticky: true
 layout: single
+sitemap:
+  changefreq: daily
+  priority : 1.0
 
 date: 2025-04-14
-last_modified_at: 2026-03-14
+last_modified_at: 2026-03-16
 ---
 
 <span style="color:gray">이 시리즈는 **경사하강법(gradient descent)**에 대해 묻는 질문에 스스로 잘 대답할 수 있도록, 기초부터 누적해서 정리한 포스트입니다. 
