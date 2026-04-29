@@ -74,7 +74,7 @@ $$
 dy=f'(x)dx
 $$
 
-여기에서 또 주의할 점은, 이 "미분"과 우리가 "미분한다"라고 할 떄의 미분(differentiation)은 다른 개념이라는 것이다. <span style="color:blue">미분(differentiation)은 도함수를 구하는 연산과정 자체를 뜻한다!</span>
+여기에서 또 주의할 점은, 이 "미분"과 우리가 "미분한다"라고 할 때의 미분(differentiation)은 다른 개념이라는 것이다. <span style="color:blue">미분(differentiation)은 도함수를 구하는 연산과정 자체를 뜻한다!</span>
 
 위와 같은 미분의 기초 개념들은 다음 포스트에 배울 "그래디언트"라는 개념을 이해하는 데 필수적이고, 나아가서는 경사하강법을 통해 딥러닝 모델의 오류(cost)을 변화시키는 과정을 이해하는 데에서도 중요하다. 
 
@@ -97,10 +97,14 @@ $$
 변수 $x$ 혹은 $y$만을 $h$만큼 움직였을 때 각각에 대한 식은 다음과 같다:
 
 $$
+\begin{aligned}
     f'_x(x,y)=f'_x(x_0,y_0)=\frac{\partial{f}}{\partial{x}}(x_0,y_0)=\lim_{h\to0}\frac{f(x_0+h,y_0)-f(x_0,y_0)}{h}
+\end{aligned}
 $$
 $$
+\begin{aligned}
     f'_y(x,y)=f'_x(x_0,y_0)=\frac{\partial{f}}{\partial{y}}(x_0,y_0)=\lim_{h\to0}\frac{f(x_0,y_0+h)-f(x_0,y_0)}{h}
+\end{aligned}
 $$
 
 위 식에서 $f_x(x,y)$에 대해 $a_0=[x_0,y_0]$을 사용하여 다시 정리하면 다음과 같다:
