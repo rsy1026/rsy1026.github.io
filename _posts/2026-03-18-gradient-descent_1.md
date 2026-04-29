@@ -17,8 +17,8 @@ sitemap:
   changefreq: daily
   priority : 1.0
 
-date: 2025-04-14
-last_modified_at: 2026-03-18
+date: 2026-03-18
+last_modified_at: 2026-04-28
 ---
 
 경사하강법을 처음부터 이해하기 위한 가장 중요한 개념 중 하나가 바로 "벡터"가 아닌가 싶다. \
