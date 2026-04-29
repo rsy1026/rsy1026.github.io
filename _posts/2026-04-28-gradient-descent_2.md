@@ -101,6 +101,7 @@ $$
     f'_x(x,y)=f'_x(x_0,y_0)=\frac{\partial{f}}{\partial{x}}(x_0,y_0)=\lim_{h\to0}\frac{f(x_0+h,y_0)-f(x_0,y_0)}{h}
 \end{aligned}
 $$
+
 $$
 \begin{aligned}
     f'_y(x,y)=f'_x(x_0,y_0)=\frac{\partial{f}}{\partial{y}}(x_0,y_0)=\lim_{h\to0}\frac{f(x_0,y_0+h)-f(x_0,y_0)}{h}
