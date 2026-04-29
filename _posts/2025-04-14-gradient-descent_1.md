@@ -234,7 +234,7 @@ $$
         $$
 
 이 때, 실수 $a_1, a_2$는 각각 $x$축과 $y$축의 <span style="color:orange">성분</span>이다. \
-$\overrightarrow{e_1},\overrightarrow{e_2}$는 각각 $x$축과 $y$축의 방향을 가지고 두 점 $E_1(0,1)$와 $E_2(1,0)$을 종점으로 하는 크기가 1인 벡터, <span style="color:orange">단위 벡터(unit vector)</span>이다. 
+$\overrightarrow{e_1},\overrightarrow{e_2}$는 각각 $x$축과 $y$축의 방향을 가지고 두 점 $E_1(0,1)$와 $E_2(1,0)$을 종점으로 하는 크기가 1인 벡터, <span style="color:orange">단위 벡터(unit vector)</span>이다. 단위 벡터 자체는 크기가 1인 모든 벡터들을 통칭하지만, 여기서의 단위 벡터는 각 기저 축에 해당되는 요소만 1이고 나머지는 0인 특수한 형태의 벡터로, 이를 <span style="color:orange">표준 기저 벡터(standard unit vector)</span>라고 힌다.
 
 이 단위 벡터들이 곧 기저 벡터이다. 
 
