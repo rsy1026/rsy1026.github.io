@@ -215,7 +215,18 @@ $$
 <script src="https://utteranc.es/client.js"
         repo="rsy1026/rsy1026.github.io-comments"
         issue-term="pathname"
-        theme="github-dark"
+        theme="light-dark"
         crossorigin="anonymous"
         async>
+</script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0DVY3PH8P2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0DVY3PH8P2');
 </script>
